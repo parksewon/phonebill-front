@@ -28,7 +28,7 @@ RUN adduser -S nginx || true
 COPY --from=builder /app/dist /usr/share/nginx/html
 
 # Copy and process nginx configuration
-COPY ${BUILD_FOLDER}/nginx.conf /etc/nginx/templates/default.conf.template
+COPY deployment/container/nginx.conf /etc/nginx/templates/default.conf.template
 
 # Add custom nginx settings
 RUN echo "client_max_body_size 100M;" > /etc/nginx/conf.d/client_max_body_size.conf && \
