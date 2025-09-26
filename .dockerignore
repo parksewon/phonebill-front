@@ -18,6 +18,3 @@ Thumbs.db
 .eslintcache
 .tsbuildinfo
 claude/
-design/
-deployment/
-*.md

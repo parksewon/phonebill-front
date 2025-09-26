@@ -61,9 +61,13 @@ Thumbs.db
 .tsbuildinfo
 claude/
 design/
-deployment/
+deployment/k8s/
+!deployment/container/
 *.md
+!deployment/container/*.md
 ```
+
+**중요**: deployment/container/ 디렉토리는 포함시키고, deployment/k8s/만 제외
 
 ### 4. 컨테이너 이미지 빌드 시도
 
